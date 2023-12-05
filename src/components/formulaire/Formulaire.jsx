@@ -14,7 +14,7 @@ const Formulaire = ({closeForm}) => {
           totalArticlesPrix(arrayRecette).then((response)=>{
             data.amount = response[0].totalPrix
             console.log(data) 
-          return  fetchData("http://localhost:3001/pay",data).then((result)=>{
+          return  fetchData("https://tfl.onrender.com/pay",data).then((result)=>{
             
             console.log(result)
             if(result.code === "201"){
