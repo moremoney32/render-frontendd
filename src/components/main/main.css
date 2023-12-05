@@ -1,0 +1,57 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding-top: 50px;
+}
+.main h2{
+    color: orange;
+    font-size: 30px;
+}
+.trie-plats{
+    display: flex;
+    justify-content: space-between;
+
+}
+.trie-sous-plats{
+    display: flex;
+    margin: auto;
+    gap: 310px;
+    padding-top: 40px;
+
+}
+.trie-sous-plats-button{
+    display: flex;
+   justify-content: space-between;
+    padding-top: 40px;
+
+}
+@media screen and (max-width:767px) {
+     .main{
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+       transform: translate3d(0,100px,0);
+        width:100%;
+    }
+    .main h2{
+        color: orange;
+        font-size: 20px;
+    }
+   .trie-plats{
+        display: flex !important;
+        justify-content: space-between !important;
+        flex-wrap: wrap;
+        gap: 15px;
+        padding-top: 30px;
+    
+    }
+    .plats3{
+        margin: auto !important;
+    }
+    .trie-sous-plats{
+        display: flex;
+       gap: 30px;
+        padding-top: 10px;
+    } 
+}

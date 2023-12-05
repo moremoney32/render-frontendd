@@ -1,0 +1,38 @@
+.localisation{
+    background:white;
+    border-radius: 15px;
+    padding: 20px;
+    color: black;
+    text-align: center;
+    width: 200px;
+}
+.custom-map{
+    color: white;
+    width: 500px;
+    height: 20vh; /* Utilisez "height" au lieu de "max-height" */
+    margin: auto;
+    background: transparent; /* Utilisez une couleur d'arrière-plan transparente */
+  }
+  @media screen and (max-width:767px) {
+    .map-container{
+        width: 100% !important;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding-bottom: 20px;
+    }
+    .custom-map{
+        width: 100% !important;
+        border-radius: 20px;
+    }
+    .localisation{
+        background:white;
+        border-radius: 15px;
+        padding: 20px;
+        color: black;
+        text-align: center;
+        width: 200px;
+        margin: auto;
+        height: 100px;
+    }
+  }

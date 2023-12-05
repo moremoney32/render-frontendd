@@ -1,0 +1,221 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+.h2-ri-restaurant{
+    display: flex;
+    gap: 2px;
+    align-items: center;
+
+}
+.h2-ri-restaurant i{
+    color: white;
+    font-size: 25px;
+}
+.h2-ri-restaurant h2{
+    color: orange;
+    font-size: 33px;
+    font-weight: 600;
+    
+}
+.nav-header ul{
+    display: flex;
+    gap: 25px;
+    color: white;
+}
+.nav-link-home{
+    text-decoration: none;
+    color: white;
+
+}
+.horizontal-icon{
+    display: none;
+    width: 15px;
+    height: 15px;
+}
+.horizontal-icon-menu{
+    display: none;
+}
+.horizontal-icon-recettes{
+    display: none;
+}
+.nav-header ul li{
+    list-style-type: none;
+    font-size: 20px;
+    transform: translate3d(0,5px,0);
+    transition: 0.3s;
+}
+
+.nav-link-actu{
+    color: orange;
+    text-decoration: none;
+
+}
+.input-search{
+   
+    position: relative;
+}
+.input-search input{
+    border-radius: 15px;
+    padding: 10px;
+    background:#141124;
+    transform: translate3d(0,5px,0);
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    padding-right: 25px;
+    color: white;
+}
+.input-search input ::placeholder{
+    color: gray;
+}
+.input-search i{
+    position: absolute;
+    right: 20px;
+    top: 13px;
+    font-size: 15px;
+    color: white;
+}
+.parent-ri-shopping{
+    width: 15px;
+    height: 15px;
+    background: orange;
+    text-align: center;
+    padding: 12px;
+    border-radius: 5px;
+    color: white;
+    position: relative;
+    transform: translate3d(0,5px,0);
+}
+.panierIncrement{
+    color:black;
+    font-size: 20px;
+    position: absolute;
+    right: 15px;
+    top: 2px;
+    font-weight: 500;
+
+}
+
+/**mobile***/
+@media screen and (max-width:767px) {
+    .header{
+        display: grid !important;
+        grid-template-columns: 1fr 1fr 1fr;
+         justify-content: space-between !important;
+        align-items: center;
+    }
+     .h2-ri-restaurant{
+        display: flex;
+        gap: 5px;
+        padding-right: 10px;
+    }
+    .h2-ri-restaurant i{
+        color: white;
+        font-size: 20px;
+    }
+    .h2-ri-restaurant h2{
+        color: orange;
+        font-size: 20px;
+        font-weight: 600;
+        
+    }
+    .input-search{
+   
+        position: relative;
+    }
+    .input-search input{
+        border-radius: 10px;
+        background:#141124;
+        transform: translate3d(0,0,0);
+        border: none;
+        outline: none;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 10px;
+        padding-bottom:10px;
+        color: white;
+    }
+    .input-search input ::placeholder{
+        color: gray;
+    }
+    .input-search i{
+        position: absolute;
+        right: 10px;
+        top: 7px;
+        font-size: 10px;
+        color: white;
+        display: none;
+    }
+    
+    .nav-header ul{
+        display: flex;
+        flex-direction: column;
+         gap: 15px; 
+        color: white;
+        display: none;
+
+    }
+    .nav-link-home{
+        text-decoration: none;
+        color: white;
+    }
+    .nav-header ul li{
+        list-style-type: none;
+        font-size:20px;
+        transform: translate3d(0,5px,0);
+        transition: 0.3s;
+    }
+    
+    .nav-link-actu{
+        color: orange;
+        text-decoration: none;
+    }
+    .horizontal-icon{
+        display: block;
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        left: 55%;
+    }
+    .horizontal-icon-menu{
+        display: block;
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        left:0;
+    }
+    .horizontal-icon-recettes{
+        display: block;
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        right:0;
+
+    }
+   .all-parent-ri-shopping{
+        position: relative;
+        padding: 15px;   
+    }
+     .parent-ri-shopping{
+        position: absolute;
+        right: 0;
+        top: -15px;
+        padding: 10px;
+        border-radius: 5px;
+    }
+    .ri-shopping-cart-line{
+        font-size: 20px;  
+    }
+    .panierIncrement{
+        font-size: 20px;
+    }  
+  }
+/**tablette***/
+@media screen and (min-width:768px) and (max-width:1024px) {
+}
