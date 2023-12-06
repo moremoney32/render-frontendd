@@ -218,7 +218,7 @@
     color: #f5b70a;
     transform: translate3d(0,5px,0);
    margin: auto;
-    font-size: 18px;
+    font-size: 16px;
 }
 .tiltle-price{
     display: flex;
@@ -243,7 +243,7 @@
 }
 .price{
     color: white;
-    font-size: 20px;
+    font-size: 18px;
 }
 .euro{
     color:#f5b70a; 
