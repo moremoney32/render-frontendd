@@ -42,16 +42,17 @@
         display: flex !important;
         justify-content: space-between !important;
         flex-wrap: wrap;
-        gap: 15px;
+        /* gap: 15px; */
         padding-top: 30px;
     
     }
     .plats3{
         margin: auto !important;
+        padding-top: 30px;
     }
     .trie-sous-plats{
         display: flex;
-       gap: 30px;
-        padding-top: 10px;
+       gap: 40px;
+        padding-top: 30px;
     } 
 }

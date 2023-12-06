@@ -19,9 +19,10 @@ const Formulaire = ({closeForm}) => {
             console.log(result)
             if(result.code === "201"){
              return alert("connexion etablie"),
-              window.location.href = result.data.payment_url
+              window.location.href = result.data.payment_url, localStorage.removeItem('produitRecettes'), localStorage.removeItem('objectPlat'), localStorage.removeItem('quantity')
               ;
             }
+            return alert("echec connexion veuillez reessayez");
            
            
           })

@@ -100,8 +100,7 @@
     border-radius: 5px;
     background:red;
     color: white;
-    cursor: pointer;
-
+    cursor: pointer;  
 }
 .pinacollada{
     padding: 15px;
@@ -130,7 +129,7 @@
     .pattes{
       padding:12px;
         font-size: 22px;
-        width:100px;
+        width:120px;
         border: none;
         border-radius: 5px;
         background:red;
@@ -141,7 +140,7 @@
     .riz{
       padding:12px;
         font-size: 22px;
-        width:100px;
+        width:120px;
         border: none;
         border-radius: 5px;
         background:red;
@@ -152,7 +151,7 @@
     .avocat{
       padding:12px;
         font-size: 22px;
-        width:100px;
+        width:120px;
         border: none;
         border-radius: 5px;
         background:red;
@@ -164,7 +163,7 @@
     .pizza{
       padding:12px;
         font-size: 22px;
-        width:100px;
+        width:120px;
         border: none;
         border-radius: 5px;
         background:red;
@@ -174,7 +173,7 @@
     }
     .poulet{
         font-size: 22px;
-        width:100px;
+        width:120px;
         border: none;
         border-radius: 5px;
         background:red;

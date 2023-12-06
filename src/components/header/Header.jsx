@@ -51,7 +51,7 @@ const Header = () => {
         <img src={horizontal} alt=''ref={icons} className='horizontal-icon-menu' onClick={changeIcons}/>
         <div className='input-search'>
             <input type="text" className='searchInput' placeholder='search  receipts...'/>
-            <i class="ri-search-line"></i>
+            <i className="ri-search-line"></i>
         </div>
         <div className='all-parent-ri-shopping'>
           <div className='parent-ri-shopping'>

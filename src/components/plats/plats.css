@@ -280,11 +280,11 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 15px;
-    padding-top: 180px;
+    gap: 30px;
+    padding-top: 210px;
 }
 .select-menu-accompagnements{    
-    padding-top: 80px;
+    padding-top: 110px;
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -315,7 +315,7 @@
     justify-content: space-between;
     padding-top: 100px;
     width: 100%;
-    gap: 15px;
+    gap: 30px;
 }
 .comand-panier{
     position: absolute;
@@ -351,7 +351,6 @@
     outline: none;
     color:green;
     cursor: pointer;
-    transform: translate3d(0,-20px,0);
     
 }
 .errorPlats{
