@@ -20,6 +20,7 @@
         flex-direction: column;
         gap: 20px;
         padding-bottom: 70px;
+        height: 70vh !important;
     }
     .custom-map{
         width: 100% !important;
@@ -33,6 +34,5 @@
         text-align: center;
         width: 200px;
         margin: auto;
-        height: 100px;
     }
   }
