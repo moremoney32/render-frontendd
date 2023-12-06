@@ -18,6 +18,7 @@ const Formulaire = ({closeForm}) => {
             
             console.log(result)
             if(result.code === "201"){
+             return alert("connexion etablie"),
               window.location.href = result.data.payment_url
               ;
             }
@@ -25,7 +26,8 @@ const Formulaire = ({closeForm}) => {
            
           })
           .catch((error) => {
-           console.log(error);
+          return console.log(error),
+           alert("echec connexion veuillez reessayez");
           
          })
 
