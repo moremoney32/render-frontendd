@@ -176,7 +176,7 @@
     border-radius: 15px;
     border: none;
     outline: none;
-    color: red;
+    color: green;
     cursor: pointer;
     
 }
@@ -191,7 +191,7 @@
         background: #141124;
         padding-left: 5px;
         padding-right: 5px;
-        width: 140px;
+        width: 130px;
         padding-top: 10px;
         border-radius: 5px;
         padding-bottom: 20px;
@@ -218,7 +218,7 @@
     color: #f5b70a;
     transform: translate3d(0,5px,0);
    margin: auto;
-    font-size: 20px;
+    font-size: 18px;
 }
 .tiltle-price{
     display: flex;
@@ -227,8 +227,8 @@
     transform: translate3d(0,15px,0);
 }
 .tiltle-price  div{
-    width: 10px;
-    height: 10px;
+    width: 7px;
+    height: 7px;
     background: #f5b70a;
     text-align: center;
     padding: 10px;
@@ -243,7 +243,7 @@
 }
 .price{
     color: white;
-    font-size: 22px;
+    font-size: 20px;
 }
 .euro{
     color:#f5b70a; 
@@ -257,7 +257,7 @@
 }
 .all-button{
     width: 100%; 
-    padding-left: 10px;
+    /* padding-left: 10px; */
     padding-right: 10px; 
     position:static !important;
     transform: translate3d(0,100px,0) !important;
@@ -293,7 +293,7 @@
 }
 .select-menu-accompagnements h2{
     color: orange;
-    font-size: 30px;
+    font-size: 25px;
     margin: auto !important;
 }
 .select-menu-accompagnements-all-button{
@@ -325,7 +325,7 @@
     align-items: center;
 }
 .comand-panier p{
-    font-size: 18px;
+    font-size: 16px;
     color:green;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
@@ -338,6 +338,36 @@
     text-align: center;
     color: white;
     border-radius: 5px;
+}
+.panier{
+    padding: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    text-align: center;
+    background:orange;
+    font-size: 25px;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    color:green;
+    cursor: pointer;
+    transform: translate3d(0,-20px,0);
+    
+}
+.errorPlats{
+    font-size: 20px;
+    color:green;
+    position: absolute;
+    left: 15%;
+    top: 65%;
+}
+.errorbiere{
+    font-size: 20px;
+    color:green;
+    position: absolute;
+    left: 8%;
+    display: none;
+
 }
 }
 

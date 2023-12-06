@@ -4,16 +4,12 @@
         grid-template-columns: 1fr 1fr 1fr;
          justify-content: space-between !important;
         align-items: center;
+        /* position: sticky !important;
+        top: 0; */
     }
     .header-restaurant{
         display: none;
     }
-    /* .h2-ri-restaurant{
-        display: flex;
-        gap: 5px;
-        padding-right: 10px;
-        display: none;
-    } */
     .h2-ri-restaurant i{
         color: white;
         font-size: 20px;
@@ -21,8 +17,7 @@
     .h2-ri-restaurant h2{
         color: orange;
         font-size: 20px;
-        font-weight: 600;
-        
+        font-weight: 600;    
     }
     .input-search{
    

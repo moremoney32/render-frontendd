@@ -88,7 +88,7 @@ const Menu = () => {
                  pizza.style.background = "red"
              }
             
-          return  setCurrentMenu(arrayMenuFilter)
+          return  setCurrentMenu(arrayMenuFilter),setErrorVin(false),setError(false)
         
            
         }
@@ -140,7 +140,7 @@ const Menu = () => {
                 jus.style.background = "red"
                
              }
-             return  setCurrentMenuBoisson(arrayMenuBoisson)
+             return  setCurrentMenuBoisson(arrayMenuBoisson),setErrorVin(false),setError(false),setCurrentMenu(arrayMenu)
             
          
         
@@ -253,7 +253,7 @@ const Menu = () => {
   return (
     <div className='all-menu'>
         <div className='comand-panier'>
-            <p>COMMANDER UN PLAT SUR L ICONE</p>
+            <p>COMMANDER</p>
             <i class="ri-shopping-cart-line"></i>
         </div>
      <Header/>
@@ -290,7 +290,7 @@ const Menu = () => {
                     <p className='special-plats-title'>{menu.h2}</p>
                     <div className='tiltle-price'>
                         <span className='price'>price:<span className='euro'>{menu.price}€</span></span>
-                        <div><i class="ri-shopping-cart-line" onClick={()=>getPanier(index)}></i></div>
+                        <div><a href='#input' className='a'><i class="ri-shopping-cart-line" onClick={()=>getPanier(index)}></i></a></div>
                    
                     </div>
                     

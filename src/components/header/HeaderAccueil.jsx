@@ -17,7 +17,7 @@ export const HeaderAccueil = () => {
   }
   
   return (
-    <div className='header'>
+    <div className='header headerAccueil'>
         <div className='h2-ri-restaurant'>
             <i class="ri-restaurant-2-line"></i>
             <h2>CUISINE DU CHEF</h2>

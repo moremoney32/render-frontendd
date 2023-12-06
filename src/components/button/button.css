@@ -128,9 +128,9 @@
         display: none;
     }
     .pattes{
-        padding: 15px;
+      padding:12px;
         font-size: 22px;
-        width: 100px;
+        width:100px;
         border: none;
         border-radius: 5px;
         background:red;
@@ -139,9 +139,9 @@
     
     }
     .riz{
-        padding: 15px;
+      padding:12px;
         font-size: 22px;
-        width: 100px;
+        width:100px;
         border: none;
         border-radius: 5px;
         background:red;
@@ -150,9 +150,9 @@
     
     }
     .avocat{
-        padding: 15px;
+      padding:12px;
         font-size: 22px;
-        width: 100px;
+        width:100px;
         border: none;
         border-radius: 5px;
         background:red;
@@ -162,9 +162,9 @@
         left: 10px;
     }
     .pizza{
-        padding: 15px;
+      padding:12px;
         font-size: 22px;
-        width: 100px;
+        width:100px;
         border: none;
         border-radius: 5px;
         background:red;
@@ -174,7 +174,7 @@
     }
     .poulet{
         font-size: 22px;
-        width: 100px;
+        width:100px;
         border: none;
         border-radius: 5px;
         background:red;
@@ -225,7 +225,7 @@
     
     }
     .pinacollada{
-        padding: 15px;
+        padding: 12px;
         font-size: 20px;
         border: none;
         border-radius: 5px;

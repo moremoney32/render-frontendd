@@ -80,7 +80,7 @@ export function Geolocation() {
     <div className="map-container">
       <MapContainer
         center={userPosition}
-        zoom={85}
+        zoom={0}
         className="custom-map"
         zoomControl={false} // classe pour appliquer des styles personnalisés
       >

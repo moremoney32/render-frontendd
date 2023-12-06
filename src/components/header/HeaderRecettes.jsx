@@ -13,13 +13,13 @@ export const HeaderRecettes = () => {
     if (icons.current && allIcons.current) {
         icons.current.style.display = "none";
         allIcons.current.style.display = "flex";
-         allIcons.current.style.transform = 'translate3d(40px, 0px, 0px)';
+          allIcons.current.style.transform = 'translate3d(40px, 0px, 0px)';
       }
 
   }
   
   return (
-    <div className='header'>
+    <div className='header headerAccueil'>
         <div className='h2-ri-restaurant'>
         <i class="ri-restaurant-2-line"></i>
         <h2>CUISINE DU CHEF</h2>
