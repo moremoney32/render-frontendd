@@ -22,7 +22,7 @@ const Formulaire = ({closeForm}) => {
               window.location.href = result.data.payment_url, localStorage.removeItem('produitRecettes'), localStorage.removeItem('objectPlat'), localStorage.removeItem('quantity')
               ;
             }
-            return alert("echec connexion veuillez reessayez");
+            //return alert("echec connexion veuillez reessayez");
            
            
           })
