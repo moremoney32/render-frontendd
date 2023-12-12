@@ -1,10 +1,12 @@
 
  import "./panierRecette.css"
 import React, { useState, useEffect,useRef} from 'react';
+import { useNavigate } from 'react-router-dom';
 import { useForm } from "react-hook-form";
 import Formulaire from '../formulaire/Formulaire';
 import { totalArticlesPrix } from '../totalArticlesPrix';
 import { HeaderRecettes } from "../header/HeaderRecettes";
+import { Geolocation } from '../geolocalisation/Geolocation';
 
 
 
@@ -14,21 +16,24 @@ function PanierRecettes() {
     const [etatRecette,setEtatRecette]= useState([])
     const [etat,setEtat]= useState(false)
     const [etatObject,setEtatObject]= useState(null)
+     const navigate = useNavigate()
+    
    
-
     useEffect(() => {
-        const arrayRecette = JSON.parse(localStorage.getItem("produitRecettes"));
+        const arrayRecette = JSON.parse(localStorage.getItem("produitRecettes"))
+        if (!arrayRecette || arrayRecette.length === 0) {
+        }
 
-        if (arrayRecette) {
+       else {
             setEtatRecette(arrayRecette);
 
             totalArticlesPrix(arrayRecette).then((response) => {
                     setEtatObject(response);
                     console.log(response)
             });
-        }
+         }
 
-    }, []);
+    }, [navigate]);
 
 
    
@@ -56,7 +61,12 @@ function PanierRecettes() {
            }  
     }
    
- 
+    // if(!arrayRecettes){
+    //     //alert(true)
+    //     return navigate("/")
+    //   }else{
+          
+    //   }
     
     
     function closeForm(){
@@ -88,6 +98,7 @@ function PanierRecettes() {
 
        }   
                                     }
+
   
     
    
@@ -162,6 +173,7 @@ function PanierRecettes() {
          
            
     </div>
+    <Geolocation/>
     </>
     
   )

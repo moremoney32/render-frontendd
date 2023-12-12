@@ -15,6 +15,9 @@ export const HeaderAccueil = () => {
       }
 
   }
+  function handleClick(){
+    window.scrollTo(0,document.querySelector("#propos").offsetBottom)
+  }
   
   return (
     <div className='header headerAccueil'>
@@ -28,8 +31,8 @@ export const HeaderAccueil = () => {
                 <NavLink to="/" className={window.location.pathname === "/"? "nav-link-actu" : "nav-link-home"}><li>Acceuil</li></NavLink>
                 <NavLink  to="/menu/:name" className={window.location.pathname === "/menu/:name"? "nav-link-actu" : "nav-link-home"}><li>Menu</li></NavLink>
                 <NavLink to="/menu/:name/panier" className={window.location.pathname === "/menu/:name/panier"? "nav-link-actu" : "nav-link-home"}><li>Recettes</li></NavLink>
-                <NavLink  className="nav-link-home"><li>A Propos</li></NavLink>
-                <NavLink  className="nav-link-home"><li>Contact</li></NavLink>
+                <NavLink  className="nav-link-home" to="/propos"><li>A Propos</li></NavLink>
+                <NavLink  className="nav-link-home" to="/contact"><li>Contact</li></NavLink>
             </ul>
         </nav>
         <img src={horizontal} alt='' className='horizontal-icon' ref={icons} onClick={changeIcon}/>

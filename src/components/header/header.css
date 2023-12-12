@@ -6,6 +6,8 @@
   top: 0;
   width: 100%;
   z-index: 100;
+  background: black;
+  padding-bottom: 15px;
 }
 .h2-ri-restaurant{
     display: flex;
@@ -112,9 +114,9 @@
         align-items: center;
         /* position: static !important; */
     }
-    .headerAccueil{
+    /* .headerAccueil{
         position: static !important;
-    }
+    } */
     /* .header{
         display: flex;
         justify-content: space-between;
@@ -221,13 +223,15 @@
         top: -15px;
         padding: 10px;
         border-radius: 5px;
+        cursor: pointer;
     }
     .ri-shopping-cart-line{
         font-size: 20px;  
     }
     .panierIncrement{
         font-size: 20px;
-    }  
+    } 
+    
   }
 /**tablette***/
 @media screen and (min-width:768px) and (max-width:1024px) {

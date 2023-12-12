@@ -253,8 +253,8 @@ const Menu = () => {
   return (
     <div className='all-menu'>
         <div className='comand-panier'>
-            <p>COMMANDER</p>
-            <i class="ri-shopping-cart-line"></i>
+            <p><span>COMMANDER les plats et boissons dans les</span><span><i class="ri-shopping-cart-line"></i> ci dessous</span></p>
+            {/* <i class="ri-shopping-cart-line"></i> */}
         </div>
      <Header/>
         <div className='all-button'>

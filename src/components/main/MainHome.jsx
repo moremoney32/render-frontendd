@@ -11,7 +11,7 @@ const MainHome = () => {
   return (
     <div className='main'>
       <div>
-      <h2>CHOISIR UN MENU</h2>
+      <h2>CLIQUER SUR UN PLAT</h2>
       </div>
         
         <div className='trie-plats'>

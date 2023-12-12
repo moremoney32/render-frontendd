@@ -6,6 +6,8 @@ import { BrowserRouter, Routes, Route} from "react-router-dom";
 import './index.css'
 import Home from './pages/Home';
 import Menu from './pages/Menu';
+import Footer from './components/footer/Footer.jsx';
+import Section from './components/section/Section.jsx';
 
 
 
@@ -18,8 +20,9 @@ const App = () => {
         <Route path="/" element={<Home/>} />
         <Route path="/menu/:name" element={<Menu/>} />
         <Route path="/menu/:name/panier" element={<PanierRecettes/>} />
+        <Route path="/propos" element={<Section/>} />
+        <Route path="/contact" element={<Footer/>} />
      </Routes>
-     <Geolocation/>
     </div>
     </BrowserRouter>
   )
