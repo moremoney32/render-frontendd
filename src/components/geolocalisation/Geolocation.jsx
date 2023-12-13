@@ -5,6 +5,7 @@ import "leaflet/dist/leaflet.css";
 import { MapContainer, TileLayer, Marker, Popup,ZoomControl } from "react-leaflet";
 import { useGeolocation } from "react-use";
 import "./geolocalisation.css"; 
+import casa from "../../icons/casa.png"
 
 export function Geolocation() {
   // Coordonnées du restaurant (exemple)
@@ -20,9 +21,9 @@ export function Geolocation() {
     popupAnchor: [0, -32],
   });
   const restaurantIcon = new L.Icon({
-    iconUrl: "https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-icon.png",
-    iconSize: [32, 32],
-    iconAnchor: [16, 32],
+    iconUrl: casa,
+    iconSize: [100, 100],
+    iconAnchor: [25, 40],
     popupAnchor: [0, -32],
   });
   
@@ -82,18 +83,18 @@ export function Geolocation() {
         center={userPosition}
         zoom={0}
         className="custom-map"
-        zoomControl={false} // classe pour appliquer des styles personnalisés
+        zoomControl={false} 
       >
         <TileLayer
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         />
         <Marker position={restaurantPosition} icon={restaurantIcon}>
-          <Popup>Restaurant</Popup>
+          <Popup>Casa-del-franco</Popup>
         </Marker>
         {geolocation.latitude && geolocation.longitude && (
           <Marker position={userPosition} icon={userIcon}>
-            <Popup>Votre position actuelle</Popup>
+            <Popup>Ma position actuelle</Popup>
           </Marker>
         )}
         <ZoomControl position="bottomright" />

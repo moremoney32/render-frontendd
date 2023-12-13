@@ -9,9 +9,9 @@
 .custom-map{
     color: white;
     width: 500px;
-    height: 20vh; /* Utilisez "height" au lieu de "max-height" */
+     min-height: 20vh;
     margin: auto;
-    background: transparent; /* Utilisez une couleur d'arrière-plan transparente */
+    background: transparent; 
   }
   @media screen and (max-width:767px) {
     .map-container{
@@ -20,7 +20,6 @@
         flex-direction: column;
         gap: 20px;
         padding-bottom: 60px;
-        /* height: 70vh !important; */
     }
     .custom-map{
         width: 100% !important;
@@ -32,8 +31,8 @@
         padding: 10px;
         color: black;
         text-align: center;
-        width: 100%; /* Modification de la largeur à 100% */
+        width: 100%;
         margin: auto;
-        box-sizing: border-box; /* Inclure les rembourrages et les bordures dans la largeur totale */
+        box-sizing: border-box;
       }
   }

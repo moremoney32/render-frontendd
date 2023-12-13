@@ -1,5 +1,6 @@
 import React from 'react'
 import { useForm } from 'react-hook-form';
+import { useState } from 'react'
 import "./formulaire.css"
 import {totalArticlesPrix} from "../totalArticlesPrix"
 import { fetchData } from '../helpers/fetchData';
@@ -7,10 +8,12 @@ import { fetchData } from '../helpers/fetchData';
 
 const Formulaire = ({closeForm}) => {
     const { register, handleSubmit, formState: { errors } } = useForm();
+    const [loading, setLoading] = useState(false);
     const onSubmit =  (data) => {
         if(data){
           console.log(data)
           let arrayRecette =  JSON.parse(localStorage.getItem("produitRecettes"))
+          setLoading(true);
           totalArticlesPrix(arrayRecette).then((response)=>{
             data.amount = response[0].totalPrix
             console.log(data) 
@@ -31,11 +34,17 @@ const Formulaire = ({closeForm}) => {
            alert("echec connexion veuillez reessayez");
           
          })
+          .finally(() => {
+          // Désactivez le chargement une fois la requête terminée (succès ou échec)
+           setLoading(false);
+           closeForm()
+          })
+
 
             
           })
    
-      closeForm()
+      // closeForm()
      
         }
       };
@@ -46,6 +55,10 @@ const Formulaire = ({closeForm}) => {
         
   return (
     <div className="parent-formulaire">
+      {loading &&<div className="loading">
+       <div className="loading-rediretion">Chargement en cours...</div>
+      </div>}
+
         <form onSubmit={handleSubmit(onSubmit)} className='form'>
           <label htmlFor="username">firstName:</label>
           <input
@@ -94,6 +107,13 @@ const Formulaire = ({closeForm}) => {
             {...register("phoneNumber", { required: true })}
           />
           {errors.phoneNumber && <span className='error'>veuillez remplir le numero de telephone</span>}
+          <label htmlFor="livraison">cocher au cas d une livraison:</label>
+          <input
+            type="checkbox"
+            id="livraison"
+            name="livraison"
+            {...register("livraison", { required: false })}
+          />
 
           <button type="submit" className='send-command'>Envoyer</button>
         </form>
