@@ -102,7 +102,7 @@ export function Geolocation() {
       {distance !== null && (
         <div className="localisation">
           <p>Distance entre vous et le restaurant situe a bastos face jc : {distance.toFixed(2)} km</p>
-          <p>Prix à payer pour la livraison : {getPrice(distance).toFixed(2)} fcfa</p>
+          <p>Prix à payer pour la livraison : {getPrice(distance).toFixed(2)} Fcfa</p>
         </div>
       )}
     </div>
