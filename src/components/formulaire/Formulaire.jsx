@@ -13,19 +13,21 @@ const Formulaire = ({closeForm}) => {
         if(data){
           console.log(data)
           let arrayRecette =  JSON.parse(localStorage.getItem("produitRecettes"))
+          data.arrayRecette = arrayRecette
           setLoading(true);
           totalArticlesPrix(arrayRecette).then((response)=>{
+            console.log(response)
             data.amount = response[0].totalPrix
+            data.quantity = response[0].totalQuantity
             console.log(data) 
-          return  fetchData("https://tfl.onrender.com/pay",data).then((result)=>{
-            
+          return  fetchData("https://test-1ewl.onrender.com/pay",data).then((result)=>{
+            //https://tfl.onrender.com
             console.log(result)
             if(result.code === "201"){
              return alert("connexion etablie"),
               window.location.href = result.data.payment_url, localStorage.removeItem('produitRecettes'), localStorage.removeItem('objectPlat'), localStorage.removeItem('quantity')
               ;
             }
-            //return alert("echec connexion veuillez reessayez");
            
            
           })
@@ -35,7 +37,6 @@ const Formulaire = ({closeForm}) => {
           
          })
           .finally(() => {
-          // Désactivez le chargement une fois la requête terminée (succès ou échec)
            setLoading(false);
            closeForm()
           })
@@ -43,8 +44,7 @@ const Formulaire = ({closeForm}) => {
 
             
           })
-   
-      // closeForm()
+  
      
         }
       };
