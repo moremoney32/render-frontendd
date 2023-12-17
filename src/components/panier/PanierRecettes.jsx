@@ -21,7 +21,9 @@ function PanierRecettes() {
    
     useEffect(() => {
         const arrayRecette = JSON.parse(localStorage.getItem("produitRecettes"))
+        console.log(arrayRecette)
         if (!arrayRecette || arrayRecette.length === 0) {
+        return    navigate("/")
         }
 
        else {
