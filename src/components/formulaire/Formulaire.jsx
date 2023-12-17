@@ -24,7 +24,7 @@ const Formulaire = ({closeForm}) => {
             //https://tfl.onrender.com
             console.log(result)
             if(result.code === "201"){
-             return alert("connexion etablie"),
+             return alert("connexion etablie,reception de la commande a votre adresse email."),
               window.location.href = result.data.payment_url, localStorage.removeItem('produitRecettes'), localStorage.removeItem('objectPlat'), localStorage.removeItem('quantity')
               ;
             }
