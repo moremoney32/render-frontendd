@@ -8,9 +8,12 @@ const Input = ({close,title,closeGetPanier}) => {
     let input = document.querySelector(".quantity")
     let inputPanier = document.querySelector(".input-panier")
     let objectRecettes = JSON.parse(localStorage.getItem("objectPlat"))
+    console.log(objectRecettes)
    
     let arrayRecettes = JSON.parse(localStorage.getItem("produitRecettes"))
+    console.log( arrayRecettes)
     let TotalQuantityPamier = JSON.parse(localStorage.getItem("quantity"))
+    console.log(TotalQuantityPamier)
    
     
     if(input.value> 0){

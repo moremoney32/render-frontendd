@@ -21,7 +21,7 @@ const Formulaire = ({closeForm}) => {
             data.quantity = response[0].totalQuantity
             console.log(data) 
           return  fetchData("https://test-1ewl.onrender.com/pay",data).then((result)=>{
-            //https://tfl.onrender.com
+            //https://tfl.onrender.com,
             console.log(result)
             if(result.code === "201"){
              return alert("connexion etablie,reception de la commande a votre adresse email."),
